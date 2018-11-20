@@ -10,10 +10,11 @@
 
     <modules>
         <module>common-grpc</module>
-        <module>sample-proto</module>
-        <module>sample-grpc-client</module>
-        <module>sample-grpc-authorization-server</module>
-        <module>sample-grpc-resource-server</module>
+        <module>sample-authorization-server-proto</module>
+        <module>sample-resource-server-proto</module>
+        <module>sample-client</module>
+        <module>sample-authorization-server</module>
+        <module>sample-resource-server</module>
     </modules>
 
     <parent>
