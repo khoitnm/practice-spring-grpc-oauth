@@ -3,11 +3,26 @@ option java_multiple_files = true;
 option java_package = "org.tnmk.practice.springgrpcoauth.authorizationserver.proto";
 
 service AuthorizationGrpcService {
-    rpc authenticate(PasswordAuthenticationRequestProto) returns (JwtProto);
+    /*
+     * https://developers.google.com/identity/protocols/OpenIDConnect
+     *
+     * View example https://developers.google.com/identity/protocols/OAuth2WebServer#refresh
+     * <code>https://www.googleapis.com/oauth2/v4/token</code>
+     */
+    rpc getToken(TokenRequestProto) returns (JwtProto)
 }
-message PasswordAuthenticationRequestProto {
-    string username = 1;
-    string password = 2;
+message TokenRequestProto {
+    string clientId = 1;
+    string clientSecret = 2;
+    string redirectUrl = 3;
+    /*
+     * grantType could be authorization_code, refresh_token, password
+     * View more at https://developers.google.com/identity/protocols/OAuth2WebServer
+     */
+    string grantType = 4;
+    string refreshToken = 5;
+    string username = 6;
+    string password = 7;
 }
 message JwtProto {
     string value = 1;
