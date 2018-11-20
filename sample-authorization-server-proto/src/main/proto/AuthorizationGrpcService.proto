@@ -8,6 +8,8 @@ service AuthorizationGrpcService {
      *
      * View example https://developers.google.com/identity/protocols/OAuth2WebServer#refresh
      * <code>https://www.googleapis.com/oauth2/v4/token</code>
+     *
+     * Some more clear explanation of fields https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1
      */
     rpc getToken(TokenRequestProto) returns (JwtProto)
 }
