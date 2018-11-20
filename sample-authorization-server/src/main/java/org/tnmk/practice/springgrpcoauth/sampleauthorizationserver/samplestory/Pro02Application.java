@@ -1,4 +1,4 @@
-package org.tnmk.practice.springgrpcoauth.sampleauthorizationserver;
+package org.tnmk.practice.springgrpcoauth.sampleauthorizationserver.samplestory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,9 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableAsync
-public class Pro01Application {
+public class Pro02Application {
 
   public static void main(String[] args) {
-    SpringApplication.run(Pro01Application.class, args);
+    SpringApplication.run(Pro02Application.class, args);
   }
 }
