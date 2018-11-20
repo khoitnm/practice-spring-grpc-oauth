@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "org.tnmk.practice.springgrpc.protobuf";
+option java_package = "org.tnmk.practice.springgrpcoauth.sampleresourceserver.proto";
 
 service SampleItemGrpcService {
     rpc addItem (ItemProto) returns (ItemProto);

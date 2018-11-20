@@ -1,6 +1,5 @@
 package org.tnmk.common.grpc.client;
 
-import com.google.common.annotations.VisibleForTesting;
 import io.grpc.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +7,7 @@ import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
 import org.tnmk.common.grpc.support.HeaderConstants;
 import org.tnmk.common.grpc.support.MetadataUtils;
-import org.tnmk.practice.springgrpc.client.common.MDCConstants;
+import org.tnmk.practice.springgrpcoauth.client.common.MDCConstants;
 
 import java.lang.invoke.MethodHandles;
 
